@@ -166,12 +166,19 @@ small {
     gap: 1rem;
 }
 
+.form-section p {
+    color: var(--text-color-header);
+    font-size: .75rem;
+    margin-bottom: .75rem;
+}
+
 .contact-form {
     color: var(--text-color-inverted);
 }
 
 .form-group label {
     display: block;
+    margin-bottom: .5rem;
 }
 
 .form-group input,
