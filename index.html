@@ -4,34 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startup Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&family=Tienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/helper.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <article>
-            <h1><object aria-disabled="true" data="./img/startup-me_logo.svg" width="300" height="300"></object><span class="sr-only">StartUp-Me</span></h1>
-            <nav>
+    <header class="header container">
+        <article class="nav">
+            <h1><object aria-disabled="true" data="./img/startup-me_logo.svg"></object><span class="sr-only">StartUp-Me</span></h1>
+            <nav class="navbar">
                 <ul>
-                    <li>Home</li>
-                    <li>Sobre</li>
-                    <li>Apps</li>
-                    <li>Contato</li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Apps</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
         </article>
-        <article>
+        <article class="welcome">
             <p>Bem-vindo ao nosso estúdio</p>
             <h2>Crie agora seu app para sua empresa</h2>
-            <button>Saiba Mais</button>
+            <button class="btn btn-lg btn-primary">Saiba Mais</button>
         </article>
     </header>
-    <main>
-        <article>
-            <h2>Sua empresa ao alcance das mãos dos seus clientes</h2>
-            <p>Nós da <span>StartUp-Me</span> conectamos o seu serviço ou produto com seu cliente, através de Apps Mobile para Smartphones e Tablets, desenvolvemos para sua empresa com a sua cara da sua empresa, para você pensar apenas no seu negócio e deixar o desenvolvimento com a gente.</p>
-            <section>
+    <main class="main">
+        <article class="brand-section text-center">
+            <div class="container">
+                <h2>Sua empresa ao alcance das mãos dos seus clientes</h2>
+                <p>Nós da <span>StartUp-Me</span> conectamos o seu serviço ou produto com seu cliente, através de Apps Mobile para Smartphones e Tablets, desenvolvemos para sua empresa com a sua cara da sua empresa, para você pensar apenas no seu negócio e deixar o desenvolvimento com a gente.</p>
+            </div>
+            <section class="container">
                 <h3>Já criamos aplicativos para diversos segmentos</h3>
-                <ul>
+                <ul class="segments">
                     <li>
                         <img src="./img/airplane.svg" alt="">
                         <p>Viagens e Turismo</p>
@@ -58,9 +65,9 @@
                     </li>
                 </ul>
                 <small>Seu ramo de atuação não está por aqui?<br>Entre em contato, certamente podemos te ajudar.</small>
-                <button>Entrar em Contato</button>
+                <button class="btn btn-primary">Entrar em Contato</button>
             </section>
-            <section>
+            <section class="container">
                 <h3>Pessoas incríveis trabalhando juntas para obter melhor resultado</h3>
                 <p>Estas são algumas das pessoas que fazem parte do nosso experiente time que compõe a <span>StartUp-Me</span>.</p>
                 <ul>
@@ -87,7 +94,7 @@
                 </ul>
             </section>
         </article>
-        <article>
+        <article class="container">
             <h2>Porque a StartUp-Me é a melhor escolha para o seu app</h2>
             <p>Os Apps na <span>StartUp-Me</span> segue os padrões atuais para desenvolvimento mobile, juntamente com metodologias ágeis. Todos os projetos incluem análise de viabilidade de mercado, concepção de User Interface e User Experience, Criação Gráfica e Plano de Marketing, sempre buscando o maior nível de engajamento dos clientes. Aliando o melhor custo/prazo/benefício.</p>
             <section>
@@ -117,35 +124,37 @@
             </section>
         </article>
         <article>
-            <h2>Entre em contato conosco</h2>
-            <p>Preencha o formulário abaixo e nos envie um orçamento, utilize também para nos enviar dúvidas e/ou sugestões.</p>
-            <section>
+            <div class="container">
+                <h2>Entre em contato conosco</h2>
+                <p>Preencha o formulário abaixo e nos envie um orçamento, utilize também para nos enviar dúvidas e/ou sugestões.</p>
+            </div>
+            <section class="container form-section">
                 <div>
                     <p>Campos com * são de preenchimento obrigatório.</p>
-                    <form>
-                        <div>
-                            <label for="name">Nome</label>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="required">Nome</label>
                             <input type="text" id="name" name="name">
                         </div>
-                        <div>
-                            <label for="email">E-mail</label>
+                        <div class="form-group">
+                            <label for="email"class="required">E-mail</label>
                             <input type="email" id="email" name="email">
                         </div>
-                        <div>
+                        <div class="form-group">
                             <label for="telefone">Telefone</label>
                             <input type="tel" id="telefone" name="telefone">
                         </div>
-                        <div>
+                        <div class="form-group">
                             <label for="contact-motive">O que você deseja?</label>
                             <select id="contact-motive" name="contact-motive">
                                 <option value="orçamento">Orçamento</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="form-group">
                             <label for="message">Mensagem</label>
                             <input type="text" id="message" name="message">
                         </div>
-                        <button type="submit">Enviar</button>
+                        <button class="btn btn-primary" type="submit">Enviar</button>
                     </form>
                 </div>
                 <div>
@@ -162,14 +171,14 @@
             </section>
         </article>
     </main>
-    <footer>
+    <footer class="container footer">
         <div>
             <p>
-                <object aria-disabled="true" data="./img/startup-me_logo.svg" width="300" height="300"></object><span class="sr-only">StartUp-Me</span>
+                <object aria-disabled="true" data="./img/startup-me_logo.svg"></object><span class="sr-only">StartUp-Me</span>
             </p>
             <small>&copy; 2015 StartUp-Me</small>
         </div>
-        <div>
+        <div class="icons">
             <p>Facebook</p>
             <p>Twitter</p>
             <p>Github</p>
